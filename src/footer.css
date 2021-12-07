@@ -1,0 +1,11 @@
+footer .firstRow {
+  background-color: #0d4a5d; }
+  footer .firstRow img {
+    width: 100px; }
+  footer .firstRow .footerIcone {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .firstRow p {
+    color: white;
+    margin-top: 10px; }

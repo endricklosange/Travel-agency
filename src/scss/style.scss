@@ -1,0 +1,80 @@
+@import'footer.scss';
+@import'variable.scss';
+h3 {
+	font-size: 22px !important;
+}
+.btn {
+	background-color: $orange !important;
+	border: none !important;
+	color: white !important;
+}
+.findCol {
+	background-color: $blue;
+	padding: 10px;
+	.submit {
+		padding: 5px 10px;
+		width: 20%;
+	}
+}
+.findCol label,h3 {
+	color: white;
+}
+.submitCol {
+	display: flex;
+	justify-content: flex-end;
+}
+.dealImg,.cardImg {
+	width: 100%;
+	height: 100%;
+}
+.announcement {
+	position: relative;
+	.whiteBlur {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		color: $grey;
+		background-color: rgba(255, 255, 255, 0.575);
+		bottom: 0;
+		width: 100%;
+		padding-right: 24px;
+	}
+	.deal {
+		position: absolute;
+		z-index: 1;
+		color: rgb(36, 36, 36);
+		margin: 20px;
+		h3 {
+			color: $grey;
+		}
+	}
+	p {
+		margin: 0px;
+		font-size: 14px;
+	}
+}
+.imformation {
+	padding: 10px 20px;
+	h4 {
+		font-size: 30px;
+	}
+}
+.price {
+	p {
+		background-color: $gold;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px;
+	}
+}
+.topDestination {
+	.announcement {
+		.deal {
+			h4 {
+				color: $orange;
+				font-weight: bold;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,74 @@
+footer .firstRow {
+  background-color: #0d4a5d; }
+  footer .firstRow img {
+    width: 100px; }
+  footer .firstRow .footerIcone {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .firstRow p {
+    color: white;
+    margin-top: 10px; }
+
+h3 {
+  font-size: 22px !important; }
+
+.btn {
+  background-color: #ea5a30 !important;
+  border: none !important;
+  color: white !important; }
+
+.findCol {
+  background-color: #0d4a5d;
+  padding: 10px; }
+  .findCol .submit {
+    padding: 5px 10px;
+    width: 20%; }
+
+.findCol label, h3 {
+  color: white; }
+
+.submitCol {
+  display: flex;
+  justify-content: flex-end; }
+
+.dealImg, .cardImg {
+  width: 100%;
+  height: 100%; }
+
+.announcement {
+  position: relative; }
+  .announcement .whiteBlur {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    color: #585858;
+    background-color: rgba(255, 255, 255, 0.575);
+    bottom: 0;
+    width: 100%;
+    padding-right: 24px; }
+  .announcement .deal {
+    position: absolute;
+    z-index: 1;
+    color: #242424;
+    margin: 20px; }
+    .announcement .deal h3 {
+      color: #585858; }
+  .announcement p {
+    margin: 0px;
+    font-size: 14px; }
+
+.imformation {
+  padding: 10px 20px; }
+  .imformation h4 {
+    font-size: 30px; }
+
+.price p {
+  background-color: #e6ac3b;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px; }
+
+.topDestination .announcement .deal h4 {
+  color: #ea5a30;
+  font-weight: bold; }
