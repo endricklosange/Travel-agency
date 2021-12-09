@@ -193,3 +193,7 @@ h3 {
 .contactFirstContent textarea,
 .contactFirstContent select {
   border-color: #ea5a30; }
+
+/* style Terms & Conditions*/
+.conditionsFirstContent ul {
+  padding: 0 50px !important; }
