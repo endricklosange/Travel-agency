@@ -1,5 +1,37 @@
-@import'footer.scss';
-@import'variable.scss';
+@import "variable.scss";
+@import "footer.scss";
+@import "responsive.scss";
+/*Global style */
+
+.banner {
+	background-image: url("https://i.picsum.photos/id/1043/5184/3456.jpg?hmac=wsz2e0aFKEI0ij7mauIr2nFz2pzC8xNlgDHWHYi9qbc");
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	p,
+	h2,
+	h1 {
+		color: white;
+		text-align: center;
+		z-index: 1;
+	}
+	.darkenDiv {
+		background-color: rgba(0, 0, 0, 0.541);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+	}
+}
+.content {
+	h3,
+	h2 {
+		border-left: 3px $orange solid;
+		padding-left: 5px;
+	}
+}
 h3 {
 	font-size: 22px !important;
 }
@@ -8,6 +40,8 @@ h3 {
 	border: none !important;
 	color: white !important;
 }
+/*home style */
+
 .findCol {
 	background-color: $blue;
 	padding: 10px;
@@ -15,15 +49,18 @@ h3 {
 		padding: 5px 10px;
 		width: 20%;
 	}
+	label,
+	h3 {
+		color: white;
+	}
 }
-.findCol label,h3 {
-	color: white;
-}
+
 .submitCol {
 	display: flex;
 	justify-content: flex-end;
 }
-.dealImg,.cardImg {
+.dealImg,
+.cardImg {
 	width: 100%;
 	height: 100%;
 }
@@ -77,4 +114,38 @@ h3 {
 		}
 	}
 }
+/* style Paris */
 
+.allImg {
+	.col-3 {
+		position: relative;
+		&:hover {
+			.magnifyingGlass {
+				display: block;
+			}
+			.darkenDivHover {
+				background-color: rgba(0, 0, 0, 0.541);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+			}
+		}
+	}
+	.magnifyingGlass {
+		display: none;
+		position: absolute;
+		top: 25%;
+		left: 40%;
+	}
+}
+
+/* style Contact */
+
+.contactFirstContent {
+	input,
+	textarea,
+	select {
+		border-color: $orange;
+	}
+}

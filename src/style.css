@@ -1,3 +1,9 @@
+footer .firstRow,
+footer .secondRow,
+footer .lastRow {
+  width: 100%;
+  margin: 0 !important; }
+
 footer .firstRow {
   background-color: #0d4a5d; }
   footer .firstRow img {
@@ -10,6 +16,95 @@ footer .firstRow {
     color: white;
     margin-top: 10px; }
 
+footer .secondRow {
+  background-color: #e1eef6; }
+  footer .secondRow a {
+    text-decoration: none !important; }
+
+footer .lastRow {
+  background-color: #ea5a30;
+  height: 30px; }
+
+@media screen and (max-width: 990px) {
+  /*Global style */
+  body {
+    padding: 0 !important;
+    margin: 0 !important; }
+  .row {
+    padding: 0 10px; }
+  body.container {
+    max-width: 100%; }
+  /*home page*/
+  .headerContents {
+    flex-direction: column; }
+    .headerContents .col-6,
+    .headerContents .col-7,
+    .headerContents .col-5,
+    .headerContents .submit {
+      width: 100% !important; }
+    .headerContents .col-5 {
+      padding: 0; }
+  .topDestination h2 {
+    margin-top: 10px; }
+  .topDestination .row {
+    display: flex;
+    flex-direction: column; }
+  .topDestination .announcement {
+    width: 100%;
+    padding: 0; }
+  .row.secondRow {
+    text-align: center; }
+  /*paris page */
+  .parisFirstContent .parisRow {
+    flex-direction: column-reverse; }
+  .parisFirstContent .col-lg-7 {
+    position: relative; }
+    .parisFirstContent .col-lg-7 .price {
+      position: absolute;
+      top: 0;
+      right: 2%; }
+    .parisFirstContent .col-lg-7 .btn {
+      width: 100% !important; }
+  .parisFirstContent .col-lg-5,
+  .parisFirstContent .col-12,
+  .parisFirstContent .allImg {
+    padding: 0;
+    margin: 0; }
+  .parisSecondContent .my-3 {
+    margin: 0; }
+  .parisLastContent .announcement {
+    padding: 0;
+    margin: 0; }
+  /* contact page */
+  .contactFirstContent .submit {
+    width: 100% !important; } }
+
+/*Global style */
+.banner {
+  background-image: url("https://i.picsum.photos/id/1043/5184/3456.jpg?hmac=wsz2e0aFKEI0ij7mauIr2nFz2pzC8xNlgDHWHYi9qbc");
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; }
+  .banner p,
+  .banner h2,
+  .banner h1 {
+    color: white;
+    text-align: center;
+    z-index: 1; }
+  .banner .darkenDiv {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; }
+
+.content h3,
+.content h2 {
+  border-left: 3px #ea5a30 solid;
+  padding-left: 5px; }
+
 h3 {
   font-size: 22px !important; }
 
@@ -18,21 +113,23 @@ h3 {
   border: none !important;
   color: white !important; }
 
+/*home style */
 .findCol {
   background-color: #0d4a5d;
   padding: 10px; }
   .findCol .submit {
     padding: 5px 10px;
     width: 20%; }
-
-.findCol label, h3 {
-  color: white; }
+  .findCol label,
+  .findCol h3 {
+    color: white; }
 
 .submitCol {
   display: flex;
   justify-content: flex-end; }
 
-.dealImg, .cardImg {
+.dealImg,
+.cardImg {
   width: 100%;
   height: 100%; }
 
@@ -72,3 +169,27 @@ h3 {
 .topDestination .announcement .deal h4 {
   color: #ea5a30;
   font-weight: bold; }
+
+/* style Paris */
+.allImg .col-3 {
+  position: relative; }
+  .allImg .col-3:hover .magnifyingGlass {
+    display: block; }
+  .allImg .col-3:hover .darkenDivHover {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; }
+
+.allImg .magnifyingGlass {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 40%; }
+
+/* style Contact */
+.contactFirstContent input,
+.contactFirstContent textarea,
+.contactFirstContent select {
+  border-color: #ea5a30; }

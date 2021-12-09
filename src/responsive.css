@@ -1,0 +1,53 @@
+@media screen and (max-width: 990px) {
+  /*Global style */
+  body {
+    padding: 0 !important;
+    margin: 0 !important; }
+  .row {
+    padding: 0 10px; }
+  body.container {
+    max-width: 100%; }
+  /*home page*/
+  .headerContents {
+    flex-direction: column; }
+    .headerContents .col-6,
+    .headerContents .col-7,
+    .headerContents .col-5,
+    .headerContents .submit {
+      width: 100% !important; }
+    .headerContents .col-5 {
+      padding: 0; }
+  .topDestination h2 {
+    margin-top: 10px; }
+  .topDestination .row {
+    display: flex;
+    flex-direction: column; }
+  .topDestination .announcement {
+    width: 100%;
+    padding: 0; }
+  .row.secondRow {
+    text-align: center; }
+  /*paris page */
+  .parisFirstContent .parisRow {
+    flex-direction: column-reverse; }
+  .parisFirstContent .col-lg-7 {
+    position: relative; }
+    .parisFirstContent .col-lg-7 .price {
+      position: absolute;
+      top: 0;
+      right: 2%; }
+    .parisFirstContent .col-lg-7 .btn {
+      width: 100% !important; }
+  .parisFirstContent .col-lg-5,
+  .parisFirstContent .col-12,
+  .parisFirstContent .allImg {
+    padding: 0;
+    margin: 0; }
+  .parisSecondContent .my-3 {
+    margin: 0; }
+  .parisLastContent .announcement {
+    padding: 0;
+    margin: 0; }
+  /* contact page */
+  .contactFirstContent .submit {
+    width: 100% !important; } }
